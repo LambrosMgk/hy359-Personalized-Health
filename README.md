@@ -5,6 +5,9 @@ Goal :
   The goal of the information system is to allow users to monitor and improve their health, but also to give doctors an original way to communicate with patients,
   and allow them to arrange appointments, read their history, to compare patient examinations through visualizations, etc.
 
+  ● Familiarity with client and server technologies (HTML, Javascript, AJAX, JAVA Servlets, CSS, REST APIS, JSP).
+  ● Familiarity with useful APIs for visualization (Maps, Graphical Representations)
+
 I used XAMPP for my database in this project and apache-tomcat-9.0.56 for the host.
 
 Example photos of a logged in user : 
