@@ -1,0 +1,18 @@
+.background_body {
+    background-image: url(../mountains.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.form_div {
+    background-color: rgba(211, 211, 211, 0.603);
+    border: 1px solid white;
+}
+
+#doctor_textarea {
+    resize: none;
+}
+
+#AMKA_warn_label, #Check_address_label {
+    color: #c00f0f;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Blood Test</title>
+        <link rel="stylesheet" type="text/css" href="CSS/RegisterForm.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script type="text/javascript" src="JS/SimpleUser/BloodTest.js"></script>
+    </head>
+
+    <body>
+        <header><h3>Your blood test</h3></header>
+
+        <div class="text-center form_div">
+            <form id="blood_work_form">
+                <label for="medical_center">Medical Center :</label><br>
+                <input type="text" id="medical_center" name="medical_center"  pattern="[A-Za-z]{4,20}" required><br>
+
+                <label for="amka">AMKA :</label><br>
+                <input type="text" id="amka" name="amka" pattern="[0-9]{11}" title="Must be 11 integers." required><br>
+
+                <label for="test_date">Date of blood test : </label><br>
+                <input type="date" id="test_date" name="test_date" min="2000-01-01" max="2030-12-31" required><br>
+
+                <label for="vitamin_d3">Vitamin D3 :</label>
+                <input type="number" id="vitamin_d3" name="vitamin_d3" min="1" max="300" ><br>
+
+                <label for="vitamin_b12">Vitamin B12 :</label>
+                <input type="number" id="vitamin_b12" name="vitamin_b12" min="1" max="300" ><br>
+
+                <label for="cholesterol">Cholesterol :</label>
+                <input type="number" id="cholesterol" name="cholesterol" min="1" max="300" ><br>
+
+                <label for="blood_sugar">Blood sugar :</label>
+                <input type="number" id="blood_sugar" name="blood_sugar" min="1" max="300" ><br>
+
+                <label for="iron">Iron :</label>
+                <input type="number" id="iron" name="iron" min="1" max="300" ><br>
+                <br>
+
+                <label id="blood_label" style="color: red;background: #eeeeee"></label>
+                <br>
+
+                <button type="button" onclick="sendBloodTest()">Submit Blood Test</button>
+            </form>
+        </div>
+    </body>
+</html>

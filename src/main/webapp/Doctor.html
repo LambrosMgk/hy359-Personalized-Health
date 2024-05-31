@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="author" content="Magiakos Labros csd4187">
+      <title>Doctor</title>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+      <link rel="stylesheet" href="CSS/Doctor.css">
+      <script type="text/javascript" src="JS/Logout.js"></script>
+      <script type="text/javascript" src="JS/Doctor/Doctor.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+      <script type="text/javascript" src="JS/Doctor/UpdateFormDoctor.js" async></script>
+      <script type="text/javascript" src="JS/Doctor/DoctorRendezvous.js"></script>
+      <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  </head>
+  <body onload="getDoctor()">
+      <div class="toplist text-center">
+          <button onclick="EmptyScreen()" style="float: left">#</button>
+          <button onclick="ShowUpdateForm()">Update form</button>
+          <button onclick="ShowManageRendezvous()">Manage rendezvous</button>
+          <button onclick="ShowCheckPatient()">Check patient history</button>
+          <button onclick="ShowTreatment()">Assign treatment</button>
+          <button onclick="">Message to patient</button>
+          <button id="logout" onclick="logout()">Log out</button>
+      </div>
+
+      <div id="ajaxContent" class="col-lg-3 text-center">
+      </div>
+
+      <div id="ajaxContent2" class="col-lg-5 text-center">
+      </div>
+
+      <div id="ajaxContent3" class="col-lg-4 text-center">
+      </div>
+
+      <footer>
+          <div>
+              <a href="https://www.ekab.gr/files/entypa/EKAB-protes-voithies.pdf"><h5>First aid PDF</h5></a>
+              <a href="https://covid19.gov.gr/"><h5>News about Covid in Greece</h5></a>
+              <a href="https://www.venizeleio.gr/"><h5>Venizeleio hospital</h5></a>
+              <a href="https://www.pagni.gr/"><h5>Pagni hospital</h5></a>
+          </div>
+      </footer>
+  </body>
+</html>

@@ -1,0 +1,23 @@
+table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+td, th {
+    border: 1px solid rgba(173, 44, 238, 0.6);
+    padding : 13px;
+}
+
+tr:nth-child(even) {
+    background-color: rgba(224, 114, 43, 0.92);
+}
+tr:nth-child(odd) {
+    background-color: rgba(218, 144, 65, 0.85);
+}
+
+.select_btn {
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+}

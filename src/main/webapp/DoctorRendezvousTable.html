@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Rendezvous table</title>
+        <link rel="stylesheet" href="CSS/DoctorRendezvousTable.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script type="text/javascript" src="JS/Doctor/DoctorRendezvousTable.js"></script>
+    </head>
+    <body>
+        <header><h3>Check your rendezvous</h3></header>
+
+        <div>
+            <form>
+                <label for="rend_year">Year :</label>
+                <input type="number" id="rend_year" min="2022" max="2023" value="2022">
+                <label for="rend_month">Month :</label>
+                <input type="number" id="rend_month" min="1" max="12" value="1">
+                <label for="rend_day">Day :</label>
+                <input type="number" id="rend_day" min="1" max="31" value="1">
+                <button type="button" id="getRendButton" onclick="getRendezvous()">&#8635</button>
+                <button type="button" id="resetRendButton" onclick="resetRendezvous()">&#10005</button>
+                <br>
+                <h3 id="rend_date" style="color: whitesmoke"></h3>
+                <button type="button" onclick="makePdf()">Get PDF</button>
+            </form>
+        </div>
+
+        <div>
+            <table id="Rend_Table">
+                <thead id="Rend_Table_head">
+                    <tr>
+                        <th>Delete</th>
+                        <th>Cancel</th>
+                        <th>Status</th>
+                        <th>Rendezvous ID</th>
+                        <th>Date</th>
+                        <th>Price</th>
+                        <th>Doctor Info</th>
+                        <th>User Info</th>
+                    </tr>
+                </thead>
+                <tbody id="Rend_Table_body">
+                </tbody>
+            </table>
+        </div>
+    </body>
+</html>

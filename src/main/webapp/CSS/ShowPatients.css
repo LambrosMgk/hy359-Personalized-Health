@@ -1,0 +1,24 @@
+table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+td, th {
+    border: 1px solid rgba(82, 28, 28, 0.6);
+    text-align: left;
+    padding : 13px;
+}
+
+tr:nth-child(even) {
+    background-color: rgba(141, 94, 26, 0.92);
+}
+tr:nth-child(odd) {
+    background-color: rgba(218, 177, 117, 0.85);
+}
+
+.delete_btn {
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+}

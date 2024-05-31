@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Magiakos Labros csd4187">
+        <title>User</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="CSS/SimpleUser.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script type="text/javascript" src="JS/Logout.js"></script>
+        <script type="text/javascript" src="JS/SimpleUser/SimpleUser.js"></script>
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+        <script src="http://www.openlayers.org/api/OpenLayers.js"></script>
+    </head>
+    <body onload="getUser();checkActiveRendezvous();" style="background-image: url(mountains.jpg);background-size: cover;background-repeat: no-repeat;">
+        <div class="toplist text-center">
+
+            <button onclick="EmptyScreen()" style="float: left">#</button>
+            <button onclick="showDataForm()">Update form</button>
+            <button onclick="showBloodTestForm()">Submit blood test</button>
+            <button onclick="showCompareExamsForm()">Compare exams and treatment</button>
+            <button onclick="showFindDoctorsForm()">Find doctors</button>
+            <button onclick="showRendezvous()">Rendezvous</button>
+            <button onclick="">Message to doctor</button>
+            <button id="logout" onclick="logout()">Log out</button>
+        </div>
+
+        <div class="col-lg-3">
+            <h3>Check BMI</h3>
+            <br>
+            <form>
+                <label for="Age">Age (Between 10 and 100 years old):</label> <br>
+                <input type="number" id="Age" name="Age" value="10" min="10" max="100"> years old
+                <br>
+                <label for="BMI_Height">Height (Between 130 and 230 cm):</label> <br>
+                <input type="number" id="BMI_Height" name="BMI_Height" value="130" min="130" max="230"> cm
+                <br>
+                <label for="BMI_Weight">Weight (Between 40 and 160 kg):</label> <br>
+                <input type="number" id="BMI_Weight" name="BMI_Weight" value="40" min="40" max="160"> kg
+                <br>
+                <button type="button" onclick="Check_BMI()">Check bmi</button>
+                <br>
+                <label id="bmi_result"></label>
+            </form>
+            <br>
+            <h3>Get ideal weight</h3>
+            <br>
+            <form>
+                <label>Gender :</label>
+                <br>
+                <input type="radio" id="iw_male" name="iw_gender" value="male">
+                <label for="iw_male">Male</label>
+                <input type="radio" id="iw_female" name="iw_gender" value="female">
+                <label for="iw_female">Female</label>
+                <br>
+                <label for="iw_Height">Height (Between 130 and 230 cm):</label> <br>
+                <input type="number" id="iw_Height" name="iw_Height" value="130" min="130" max="230"> cm
+                <br>
+                <button type="button" id="iw_button" onclick="get_ideal_weight()">Get ideal weight</button>
+                <br>
+                <label id="iw_label"></label>
+            </form>
+        </div>
+
+        <div id="ajaxContent" class="col-lg-5 text-center">
+        </div>
+
+        <div id="ajaxContent2" class="col-lg-4 text-center">
+        </div>
+
+        <footer>
+            <div>
+                <a href="https://www.ekab.gr/files/entypa/EKAB-protes-voithies.pdf"><h5>First aid PDF</h5></a>
+                <a href="https://covid19.gov.gr/"><h5>News about Covid in Greece</h5></a>
+                <a href="https://www.venizeleio.gr/"><h5>Venizeleio hospital</h5></a>
+                <a href="https://www.pagni.gr/"><h5>Pagni hospital</h5></a>
+            </div>
+        </footer>
+    </body>
+</html>

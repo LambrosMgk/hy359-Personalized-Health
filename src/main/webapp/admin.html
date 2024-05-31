@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Admin</title>
+        <link rel="stylesheet" href="CSS/admin.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script type="text/javascript" src="JS/admin.js"></script>
+        <script type="text/javascript" src="JS/Logout.js"></script>
+    </head>
+    <body>
+        <div class="no-row-gutters text-center">
+
+            <div class="toplist text-center">
+
+                <button onclick="" style="float: left">#</button>
+                <button><h3>Welcome admin!</h3></button>
+                <button id="logout" onclick="logout()">Log out</button>
+            </div>
+
+
+            <div id="Users" class="col-lg-4">
+                <h3>User table : add refresh button</h3>
+                <table id="UsersTable">
+                    <thead id="UsersTableHead">
+                    <tr>
+                        <th>Delete</th>
+                        <th>User id</th>
+                        <th>Username</th>
+                        <th>Email</th>
+                        <th>First name</th>
+                        <th>Last name</th>
+                        <th>Birthdate</th>
+                        <th>City</th>
+                        <th>Address</th>
+                        <th>Telephone</th>
+                    </tr>
+                    </thead>
+                    <tbody id="UsersTableBody">
+                    </tbody>
+                </table>
+            </div>
+
+            <div id="VerDoctors" class="col-lg-4">
+                <h3>Verified doctors table:</h3>
+                <table id="DoctorsTable">
+                    <thead id="DoctorsTableHead">
+                    <tr>
+                        <th>Delete</th>
+                        <th>Doctor id</th>
+                        <th>First name</th>
+                        <th>Last name</th>
+                        <th>Country</th>
+                        <th>City</th>
+                        <th>Address</th>
+                        <th>Speciality</th>
+                        <th>Telephone</th>
+                    </tr>
+                    </thead>
+                    <tbody id="DoctorsTableBody">
+                    </tbody>
+                </table>
+            </div>
+
+            <div id="ToVerDoctors" class="col-lg-4">
+                <h3>To verify doctors table:</h3>
+                <table id="ToVerDoctorsTable">
+                    <thead id="ToVerDoctorsTableHead">
+                    <tr>
+                        <th>Delete</th>
+                        <th>Verify</th>
+                        <th>Doctor id</th>
+                        <th>First name</th>
+                        <th>Last name</th>
+                        <th>Country</th>
+                        <th>City</th>
+                        <th>Address</th>
+                        <th>Speciality</th>
+                        <th>Telephone</th>
+                    </tr>
+                    </thead>
+                    <tbody id="ToVerDoctorsTableBody">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </body>
+</html>

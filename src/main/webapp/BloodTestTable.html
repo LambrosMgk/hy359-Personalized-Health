@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Blood Tests</title>
+        <link rel="stylesheet" href="CSS/BloodTestTable.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script type="text/javascript" src="JS/SimpleUser/BloodTest.js"></script>
+    </head>
+    <body>
+        <header><h3>Your blood tests (based on amka)</h3>
+        <button type="button" onclick="GetBloodTests()">&#8635</button>
+        </header>
+
+        <div>
+            <table id="BloodTestTable">
+                <thead id="BloodTestTableHead">
+                    <tr>
+                        <th>Delete Test</th>
+                        <th>Test Date</th>
+                        <th>Medical Center</th>
+                        <th>Vitamin D3</th>
+                        <th>Vitamin D3 level</th>
+                        <th>Vitamin B12</th>
+                        <th>Vitamin B12 level</th>
+                        <th>Cholesterol</th>
+                        <th>Cholesterol level</th>
+                        <th>Blood Sugar</th>
+                        <th>Blood Sugar level</th>
+                        <th>Iron</th>
+                        <th>Iron level</th>
+                    </tr>
+                </thead>
+                <tbody id="BloodTestTableBody">
+                </tbody>
+            </table>
+        </div>
+    </body>
+</html>

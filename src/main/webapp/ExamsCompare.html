@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="CSS/BloodTestTable.css">
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+        <script type="text/javascript" src="JS/SimpleUser/ExamsCompare.js"></script>
+    </head>
+    <body>
+        <div class="text-center">
+            <div id="curve_chart" style="width: 100%; height: 500px"></div>
+            <div>
+                <button type="button" onclick="DrawVitamin_D3()">Vitamin D3</button>
+                <button type="button" onclick="DrawVitamin_B12()">Vitamin B12</button>
+                <button type="button" onclick="DrawCholesterol()">Cholesterol</button>
+                <button type="button" onclick="DrawBlood_surar()">Blood Sugar</button>
+                <button type="button" onclick="DrawIron()">Iron</button>
+            </div>
+        </div>
+
+        <div id="ExamsTable">
+            <table id="BloodTestTable">
+                <thead id="BloodTestTableHead">
+                <tr>
+                    <th>Test Date</th>
+                    <th>Medical Center</th>
+                    <th>Vitamin D3</th>
+                    <th>Vitamin D3 level</th>
+                    <th>Vitamin B12</th>
+                    <th>Vitamin B12 level</th>
+                    <th>Cholesterol</th>
+                    <th>Cholesterol level</th>
+                    <th>Blood Sugar</th>
+                    <th>Blood Sugar level</th>
+                    <th>Iron</th>
+                    <th>Iron level</th>
+                </tr>
+                </thead>
+                <tbody id="BloodTestTableBody">
+                </tbody>
+            </table>
+        </div>
+    </body>
+</html>

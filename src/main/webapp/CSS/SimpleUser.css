@@ -1,0 +1,48 @@
+.toplist {
+    background-color: burlywood;
+    overflow: hidden;
+}
+
+.toplist button {
+    float: none;
+    border-color: white;
+    text-align: center;
+    padding: 10px 16px;
+    text-decoration: aqua;
+    font-size: 17px;
+    background: chocolate;
+}
+
+/* Change the color of links on hover */
+.toplist button:hover {
+    background-color: #ce844f;
+    color: black;
+}
+
+footer {
+    position:fixed;
+    bottom:0;
+    width:100%;
+    height:4%;   /* Height of the footer */
+    background: #eca102;
+}
+
+footer a {
+    display: inline-block;
+    margin-left: 15px;
+}
+
+footer a:link {
+    color: #ee9663;
+    background-color: #a43a1a;
+    text-decoration: none;
+}
+
+#logout {
+    background-color: red;
+     float: right;
+ }
+
+#logout:hover{
+    background-color: darkred;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Map with Doctors</title>
+        <link rel="stylesheet" href="CSS/UserMapWithDoctors.css">
+    </head>
+    <body>
+        <div id="Map" style="height:400px; width:100%"></div>
+
+        <div>
+            <h3>Selected Doctor :</h3>
+            <br>
+            <form>
+                <label for="doc_fname">First name :</label>
+                <input type="text" id="doc_fname" readonly>
+                <label for="doc_lname">Last name :</label>
+                <input type="text" id="doc_lname" readonly>
+                <br>
+                <label for="doc_address">Address :</label>
+                <input type="text" id="doc_address" readonly>
+                <label for="doc_tel">Telephone :</label>
+                <input type="text" id="doc_tel" readonly>
+                <br>
+                <label for="doc_spec">Speciality :</label>
+                <input type="text" id="doc_spec" readonly>
+                <br>
+                <label for="carDistance">Car distance :</label>
+                <input type="text" id="carDistance" readonly>
+                <br>
+                <label for="carTime">Car time :</label>
+                <input type="text" id="carTime" readonly>
+            </form>
+        </div>
+
+        <div>
+            <h3>Available rendezvous</h3>
+
+            <table id="UserRend_Table">
+                <thead id="UserRend_Table_head">
+                <tr>
+                    <th>Select</th>
+                    <th>Status</th>
+                    <th>Rendezvous ID</th>
+                    <th>Date</th>
+                    <th>Price</th>
+                    <th>Doctor Info</th>
+                </tr>
+                </thead>
+                <tbody id="UserRend_Table_body">
+                </tbody>
+            </table>
+        </div>
+    </body>
+</html>

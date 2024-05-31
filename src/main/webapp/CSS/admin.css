@@ -1,0 +1,53 @@
+.toplist {
+    background-color: burlywood;
+    overflow: hidden;
+}
+
+.toplist button {
+    float: none;
+    border-color: white;
+    text-align: center;
+    padding: 10px 16px;
+    text-decoration: aqua;
+    font-size: 17px;
+    background: chocolate;
+}
+
+/* Change the color of links on hover */
+.toplist button:hover {
+    background-color: #ce844f;
+    color: black;
+}
+
+#logout {
+    background-color: red;
+    float: right;
+}
+
+#logout:hover{
+    background-color: darkred;
+}
+
+table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+td, th {
+    border: 1px solid rgba(70, 204, 192, 0.6);
+    padding : 20px;
+}
+
+tr:nth-child(even) {
+    background-color: rgba(49, 130, 173, 0.92);
+}
+tr:nth-child(odd) {
+    background-color: rgba(133, 218, 218, 0.85);
+}
+
+.btn {
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+}

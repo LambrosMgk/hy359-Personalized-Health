@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Magiakos Labros">
+        <title>Main page</title>
+        <link rel="stylesheet" href="CSS/index.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script type="text/javascript" src="JS/login.js"></script>
+        <script type="text/javascript" src="JS/MainPageGetDoctors.js"></script>
+        <script src="http://www.openlayers.org/api/OpenLayers.js"></script>
+        <script src="JS/fix_for_openlayer.js"></script>
+    </head>
+
+    <body class="background_body">
+        <div class="row-no-gutters">
+
+            <div class="col-lg-3">
+                <br><br><br><br>
+                <div class="text-center form_div" id="Form_div">
+                    <h2>Welcome!</h2>
+                    <form id="myForm">
+                        <label for="username">Username:</label> <br>
+                        <input type="text" id="username" name="username" pattern="[A-Za-z]{8,}" title="Must be atleast 8 latin characters." required>
+                        <br>
+                        <label for="password">Password:</label> <br>
+                        <input type="password" id="password" name="password" pattern="(?=.*[A-Za-z])(?=.*\d)(?=.*[!@#$%^&*]).{8,15}" title="Must be 8-15 characters. Can use symbols !,@,#,$,%,^,&,*" required>
+                        <!--Password pattern doesn't check for uppercase or lowercase(?=.*[a-z])(?=.*[A-Z])-->
+                        <button style="position: absolute" type="button" id="password_button" onclick="passwordShow()" value="0"><i class="fa fa-eye"></i></button>
+                        <br>
+                        <input type="button" id="login" onclick="loginPOST()" value="Login">
+                    </form>
+                    <br>
+                    <div id="error_msg" style="display: none"><b style="color: red">Wrong Credentials</b><br></div>
+                    <i>You don't have an account yet?</i> <a href="register_form.html">Sign up!</a>
+                </div>
+            </div>
+
+            <div class="col-lg-4 text-center">
+                <h3>Medical services Heraklion!</h3>
+            </div>
+
+            <div class="col-lg-5 text-center">
+                <h3>Available doctors information</h3>
+
+                <div id="Map" style="height:400px; width:100%"></div>
+
+                <div>
+                    <table id="DoctorsTable">
+                        <thead id="DoctorsTableHead">
+                        <tr>
+                            <th>First name</th>
+                            <th>Last name</th>
+                            <th>Country</th>
+                            <th>City</th>
+                            <th>Address</th>
+                            <th>Speciality</th>
+                            <th>Telephone</th>
+                        </tr>
+                        </thead>
+                        <tbody id="DoctorsTableBody">
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <footer>
+                <div>
+                    <a href="https://www.ekab.gr/files/entypa/EKAB-protes-voithies.pdf"><h5>First aid PDF</h5></a>
+                    <a href="https://covid19.gov.gr/"><h5>News about Covid in Greece</h5></a>
+                    <a href="https://www.venizeleio.gr/"><h5>Venizeleio hospital</h5></a>
+                    <a href="https://www.pagni.gr/"><h5>Pagni hospital</h5></a>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>
